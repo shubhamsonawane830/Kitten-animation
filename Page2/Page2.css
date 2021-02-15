@@ -1,0 +1,35 @@
+MainContainer{
+	width: 100%;
+	position: relative;
+	align-items: center;
+	background-color: #D3D3D3;
+	Height: 100%;
+}
+
+.body
+{
+	background-image: linear-gradient(rgba(0,0,0,0.7),(rgba(0,0,0,0.7)),url(bck.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.logo {
+	width: 160px;
+	height: 160px;
+    position: absolute;
+    left: 40%;
+	margin-top:80px;
+	text-align: center;
+	margin-left: 50px;
+}
+
+.logo img {
+
+	text-align: center;
+}
+
+
+.box2 {
+	margin-left: 50px;
+	margin-top: 100px;
+}

@@ -1,0 +1,486 @@
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.cat {
+  width: 400px;
+  height: 200px;
+  margin: 50px auto 0;
+}
+
+.logo {
+    position: absolute;
+	margin-top:60px;
+}
+
+.logo img {
+    height: 165px;
+    width: 200px;
+    
+}
+
+.center{
+	position: absolute;
+	left: 50%;
+	top:15%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: row;
+}
+
+.checked{
+	color: orange;
+}
+
+.rectangle{
+	margin-left: 500px;
+	height: 100px;
+	width: 400px;
+	background-color: #E75480;
+		border-radius: 30px;
+		margin-top: 100px;
+
+}
+
+.rectangle1{
+	height: 40px;
+	width: 160px;
+	background-color: #E75480;
+		border-radius: 30px;
+		
+
+}
+
+.button{
+   position: absolute;
+   height: 30px;
+   width: 40px;
+   border-radius: 8px;
+   background-color: white;
+}
+
+
+.fas fa-volume-up{
+	margin-left: 35px;
+}
+
+.fa fa-refresh{
+		margin: 6px;
+}
+
+.circle{
+	border-radius: 30%;
+	width: 16px;
+	height: 8px;
+	background: #835C3B;
+	border: 3px solid #000;
+	color: #000;
+	text-align: center;
+	font: 32px Arial, sans-serif;
+	margin-left: 40px;
+	display: table-cell;
+	vertical-align:center;
+	margin-left:3px;
+}
+
+.ceneter .stars{
+	height: 150px;
+	width: 500px;
+    text-align: center;
+}
+
+
+.stars label{
+	font-size: 100px;
+	color: lightgrey;
+	margin: 0 5px;
+	text-shadow: 1px 1px #bbb;
+}
+
+.moving{
+	  margin-top: 550px;
+	  margin-left: 180px;
+}
+
+
+/*.move {
+  animation: move-animation 5.5s infinite;
+}*/
+
+.walking {
+  animation: walk-animation 2s steps(12) infinite;
+  background: url("./assets/animatedcat.gif") 0 0 no-repeat;
+  	  margin-top: 450px;
+
+}
+
+.sitting {
+  animation: sit-animation 2s steps(6) infinite;
+  background: url("./assets/animatedcat.gif") 0 0 no-repeat;
+}
+/*
+.walk-then-sit {
+  animation: walk-animation 2s steps(12) 1, sit-animation 3s 2s steps(6) 1;
+  background: url("./assets/animatedcat.gif") 0 0 no-repeat;
+}
+*/
+@keyframes walk-animation {
+  from {
+    transform: translateX(1000px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.left-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+
+}
+.right-container{
+    background-color: palevioletred;
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+.text{
+    font-size: 20px;
+    position: absolute;
+}
+.text-position1{
+    top: 200px;
+    left: 700px;
+}
+.text-position2{
+    top: 225px;
+    left: 700px;
+}
+
+.image-cat1{
+   margin-top: 600px;
+   margin-left: 25px;
+}
+
+.image-ball1{
+    margin-top: 600px;
+    margin-left: 25px;
+}
+
+.imagecarpet{
+    position: relative;
+    margin-left: 490px;
+    height: 220px;
+    width: 600px;
+}
+
+.box1{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #FF4993;  
+    position: absolute;
+    top: 170px;
+    left: 600px;
+    padding: 18px;
+}
+.box2{
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: #FF4993;  
+    position: absolute;
+    top: 170px;
+    left: 850px;
+    padding: 15px 25px;
+}
+.box3{
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: #FF4993;  
+    position: absolute;
+    top: 170px;
+    left: 1100px;
+    padding: 15px 25px;
+}
+.box4{
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: #FF4993;  
+    position: absolute;
+    top: 170px;
+    left: 1200px;
+    padding: 15px 25px;
+}
+.box5{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: #FF4993;  
+    position: absolute;
+    top: 595px;
+    left: 500px;
+    padding: 3px 5px;
+	margin-top: 140px;
+}
+.box6{
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding:  5px 10px;
+    margin: 2px;
+}
+.box7{
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding:  5px 35px;
+    margin: 2px;
+    background-color: white;
+    width: 20px;
+}
+.box8{
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding:  5px 35px;
+    margin: 2px;
+    background-color: purple;
+}
+.box6:hover,.box8:hover{
+    background-color: yellow;
+}
+.text{
+    font-size: 20px;
+    position: absolute;
+}
+.text-position1{
+    top: 300px;
+    left: 700px;
+}
+.text-position2{
+    top: 325px;
+    left: 700px;
+}
+.text-position3{
+    top: 350px;
+    left: 700px;
+}
+.image-volume{
+    height: 20px;
+    width: 20px;
+}
+
+.image-carpet{
+    position: absolute;
+    top:337px;
+    left: 100px;
+    height: 360px;
+    width: 1300px;
+}
+.image-cat1{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    animation-name:cat-animation;
+    animation-duration: 5s;
+
+}
+.image-cat2{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 700px;
+    left: 1200px;
+    animation-name:cat-animation2;
+    animation-duration: 5s;
+
+}
+.image-cat3{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 450px;
+    left: 800px;
+}
+.image-cat4{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 350px;
+    left: 450px;
+    animation-name:cat-animation;
+    animation-duration: 5s;
+}
+.image-cat5{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 450px;
+    left: 400px;
+    animation-name:cat-animation;
+    animation-duration: 5s;
+}
+@keyframes cat-animation {
+    from {
+      transform: translateX(-400px);
+    }
+  
+    to {
+      transform: translateX(0px);
+    } 
+}
+
+@keyframes cat-animation2 {
+    from {
+      transform: translateX(400px);
+    }
+  
+    to {
+      transform: translateX(0px);
+    } 
+}
+
+
+@keyframes ball-animation {
+    0% {
+        transform: translateX(0px);
+        transform: rotate(260deg);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0px);
+        transform: rotate(260deg);
+    }
+}
+
+@keyframes ball-animation2 {
+    0% {
+        transform: translateX(0px);
+        transform: rotate(260deg);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0px);
+        transform: rotate(260deg);
+    }
+}
+
+.image-ball1{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 60px;
+    left: 120px;
+    animation: ball-animation 3s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+.image-ball2{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 780px;
+    left: 1170px;
+    animation: ball-animation2 3s;
+    animation-delay: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+.image-ball3{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 180px;
+    left: 95px;
+    animation: ball-animation 3s;
+    animation-iteration-count: infinite;
+}
+.popUp{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    animation: popUp 4s;
+}
+.msg{
+    width:50px;
+    font-size: 30px;
+    position: absolute;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    top: 130px;
+    left: 150px;
+}
+#popUpWrong{
+    animation: popupWrong 3s infinite;
+}
+@keyframes popUp {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes popupWrong {
+    0% {
+        transform: rotate(25deg);
+    }
+    50% {
+        transform: rotate(-25deg);
+    }
+    100% {
+        transform: rotate(25deg);
+    }
+}
+
+
+
+/*
+@keyframes move-animation {
+  from {
+    margin-left: 120%;
+  }
+
+  to {
+    margin-left: -120%;
+  }
+}
+
+@keyframes sit-animation {
+  from {
+    background-position: -400px 0;
+  }
+
+  to {
+    background-position: -400px -1200px;
+  }
+}
+*/
+

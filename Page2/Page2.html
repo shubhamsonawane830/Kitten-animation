@@ -1,0 +1,92 @@
+<head>
+<link rel="stylesheet" href="Page2.css">
+</head>
+<style>
+p {
+  background-image: url(bck.jpg);
+  }
+  
+  .logo {
+	width: 190px;
+	height: 190px;
+	margin-left: 760px;
+	margin-top:40px;
+	text-align: center;
+}
+
+.logo img {
+
+	text-align: center;
+}
+
+.box2 img {
+      	text-align: center;
+
+}
+
+
+.box2 {
+position: absolute;
+	margin-left: 660px;
+	margin-top: 100px;
+	height: 420px;
+}
+
+.cat{
+position: relative;
+height: 220px;
+width: 180px;
+	 margin-top: 160px;
+	 margin-left: 18px;
+	     z-index: 1;
+    animation-name: cat ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite ;
+
+}
+
+@keyframes cat {
+    from   {left:670px;}
+    to  {left:720px;}
+}
+
+
+.carpet{
+   position: absolute;
+   margin-left: 430px;
+   margin-top: 380px;
+}
+
+.button{
+   position: absolute;
+   height: 40px;
+   width: 100px;
+   margin-left: 820px;
+   margin-top: 530px;
+   border-radius: 8px;
+   background-color: orange;
+}
+
+.button:hover {
+    background-color: chartreuse;
+}
+
+
+
+  </style>
+  <body style="background: url(bck1.jpg ); background-size: 100%">
+  <div class="MainContainer">
+		 
+          <div class="logo"><img src="./assets/kittenLogo.png" width="190";height="190";/>          </div> 
+		 		  <div  >
+				  				  				  <img src="./assets/carpet.png" class="carpet"  />
+												  <button type="button" class="button">Submit</button>
+				  <img src="./assets/armchair.png" class="box2" />
+				  				  <img src="./assets/cat.png" class="cat"  />
+
+	    </div> 
+
+</body>
+</html>
+
+
